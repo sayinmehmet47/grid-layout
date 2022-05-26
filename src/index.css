@@ -1,13 +1,61 @@
-body {
+:root {
+    --yellow1: #664400;
+    --yellow2: #CC8800;
+    --yellow3: #FEC048;
+    --yellow4: #FFe4ad;
+    --yellow5: #FFF5e0;
+    --purple1: #29204B;
+    --purple2: #6245D9;
+    --purple3: #8B74E7;
+    --purple4: #C0A0FF;
+    --neutral300: #D5D4DC;
+    --neutral100: #F7F6F9;
+    --neutral200: #E8E7E4;
+  }
+
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.topbar{
+    background-color: var(--purple1);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: white;
 }
+
+.leftbar{
+    height: 100vh;
+    width: 100vw;
+    color: var(--neutral100);
+    background-color: var(--purple1);
+    max-width: 220px;
+   
+}
+.leftbar-small{
+    width: 80px;
+    margin-right: 1%;
+}
+
+.dashboard{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--neutral100);
+    padding-left: 5%;
+}
+
+.rightbar{
+    width: 320px;
+    background-color: var(--neutral200);
+}
+
+
+    
