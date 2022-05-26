@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+
 :root {
     --yellow1: #664400;
     --yellow2: #CC8800;
@@ -11,6 +13,9 @@
     --neutral300: #D5D4DC;
     --neutral100: #F7F6F9;
     --neutral200: #E8E7E4;
+    --neutral400:#B2B0BC;
+    --neutral500: #908E9A;
+
   }
 
 
@@ -18,18 +23,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'HK Grotesk', sans-serif;
    
 }
 
 .topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--purple1);
     height: 50px;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     color: white;
+    padding:2px 8px;
+    overflow: auto;
 }
 
 .leftbar{
@@ -40,16 +50,159 @@
     max-width: 220px;
    
 }
+.leftbar-body .body-top{
+    margin-bottom: 40px;
+    
+}
+
+.leftbar-body .body-bottom{
+    margin-top: 40px;
+    font-size: 14px;
+    display: flex;
+    align-content:flex-start;
+   
+}
+.leftbar-body .body-footer{
+    margin-top: 40px;
+    font-size: 14px;
+    display: flex;
+    align-content:flex-start;
+    box-sizing: border-box;
+   
+}
+
+
 .leftbar-small{
     width: 80px;
     margin-right: 1%;
+}
+
+
+.leftbar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftbar li{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin-bottom: 6px;
+    margin-left: 20px;  
+    padding-left: 20px;
+    padding: 6px; 
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 35px;
+    width: fit-content;
+
+}
+
+.leftbar li:hover{
+    background-color: var(--purple2);
+    
+}
+
+.leftbar hr {
+    width:75%;
+    margin:0 auto;
+    color: var(--neutral300);
+    height: 1px;
+    color: var(--neutral300);
+    background-color: var(--neutral300);
+    border: none;
+}
+
+img{
+    width: 80%;
+    max-width: 600px;
+}
+
+.menuIcon{
+    margin-left: 25px;
+}
+.helpIcon{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 287px;
 }
 
 .dashboard{
     height: 100vh;
     width: 100%;
     background-color: var(--neutral100);
-    padding-left: 5%;
+}
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 30px 60px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+    overflow: auto; 
+}
+.dashboard .dashboard-header ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.dashboard .dashboard-header ul li{
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    list-style: none;
+    cursor: pointer;
+    
+   
+}
+
+.dashboard .navbar-dashboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    position: relative; 
+     z-index : 1;
+}
+.dashboard .navbar-dashboard::before{
+    content : "";
+    position: absolute;
+    left    : 40;
+    bottom  : 11px;
+    height  : 1px;
+    width   : 88%;  
+    border-bottom:1px solid var(--neutral500);
+}
+
+.dashboard .navbar-dashboard ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.dashboard .navbar-dashboard ul:first-of-type{
+    color: var(--neutral500);
+
+}
+
+
+
+.dashboard .navbar-dashboard ul li{
+    list-style: none;
+    padding: 5px;
+}
+
+.dashboard .navbar-dashboard ul li:hover{
+    border-bottom: 1px solid black;
+
 }
 
 .rightbar{
@@ -58,4 +211,56 @@
 }
 
 
+.overFlowMenu{
+   position:absolute;
+    overflow:hidden;
+    text-align: center;
+    z-index: 1;
+    background-color:rgb(54, 53, 53);
+    padding-top: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: black;
+    background-color: var(--neutral100);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);    
+    font-size: larger;
+
+}
+
+.overFlowMenu li:hover{
+    background-color: var(--neutral300);
+}
+
+
+.card{
+    background-color: #dededc;
+    height:40%;
+    width: 40%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+
+}
     
+
+.numberCircle {
+    display: inline-block;
+    line-height: 0px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: rgb(252, 198, 97);
+
+  }
+  
+  .numberCircle span {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
