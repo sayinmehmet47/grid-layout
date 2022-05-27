@@ -1,17 +1,31 @@
+import { ArrowUpRight } from "@carbon/icons-react";
+import { TaskLocation } from "@carbon/icons-react";
+import { DeliveryAdd } from "@carbon/icons-react";
 import React from "react";
 
 export default function Card(props) {
+  const { title, describtion } = props;
   return (
     <div className="card">
       <div className="card-header">
-        <h3>{props.title}</h3>
-      </div>
-      <div className="card-body">
-        <p>{props.description}</p>
+        {title === "shipment" ? (
+          <span className="shipment">
+            <DeliveryAdd />
+          </span>
+        ) : (
+          <span className="tasklocation">
+            <TaskLocation />
+          </span>
+        )}
+        <div className="card-body" style={{ marginLeft: "8px" }}>
+          <p>{describtion}</p>
+        </div>
       </div>
 
       <div className="card-footer">
-        <a href={props.link}>{props.linkText}</a>
+        <span className="arrow">
+          <ArrowUpRight />
+        </span>{" "}
       </div>
     </div>
   );

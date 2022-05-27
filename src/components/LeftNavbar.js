@@ -50,7 +50,7 @@ export default function LeftNavbar({ isLeftBarOpen }) {
     <div
       className={
         isWide
-          ? `leftbar container__col ${isLeftBarOpen ? "" : "hidden-md-down"}`
+          ? `leftbar container__col-3 ${isLeftBarOpen ? "" : "hidden-md-down"}`
           : `container_row leftbar-small leftbar ${
               isLeftBarOpen ? "" : "hidden-md-down"
             }`

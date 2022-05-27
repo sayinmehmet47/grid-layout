@@ -10,6 +10,10 @@
     --purple2: #6245D9;
     --purple3: #8B74E7;
     --purple4: #C0A0FF;
+    --purtple50:#EBE5FF;
+    --purtple100:#CEC2FF;
+    --blue50:#DEF3F8;
+    --blue100:#B4E5EE;
     --neutral300: #D5D4DC;
     --neutral100: #F7F6F9;
     --neutral200: #E8E7E4;
@@ -42,7 +46,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     background-color: var(--purple1);
-    height: 50px;
+    height: 56px;
     width: 100%;
     top: 0;
     left: 0;
@@ -98,7 +102,6 @@ h2{
     align-content: center;
     justify-content: flex-start;
     list-style: none;
-    margin-bottom: 6px;
     margin-left: 20px;  
     padding-left: 20px;
     padding: 6px; 
@@ -110,7 +113,7 @@ h2{
 }
 
 .leftbar li:hover{
-    background-color: var(--purple2);
+    background-color: var(--neutral500);
     
 }
 
@@ -177,7 +180,7 @@ img{
     justify-content: space-between;
     align-items: center;
     position: relative;
-
+    
 }
 
 .dashboard .navbar-dashboard::after {
@@ -258,13 +261,58 @@ img{
 }
 
 .card{
-    background-color: #dededc;
-        height:40%;
-        width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
     border-radius: 5px;
-    text-align: center;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+    background-color: var(--neutral100);
+    background-color:white;
+    height:65px;
+    width: 49%;
+    border-radius: 5px;
+    box-shadow: var(--elevation24);
 
+}
+
+.card .shipment{
+    background-color:var(--blue100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.card .tasklocation{
+    background-color:var(--purtple100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+}
+.card .card-header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.card .arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.cards .small-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
 }
     
 
@@ -286,6 +334,19 @@ img{
     margin-right: 8px;
   }
 
+  .square-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: var(--neutral100);
+    background-color:white;
+    width:45%;
+    height:65%;
+    border-radius: 5px;
+    box-shadow: var(--elevation24);  }
+
 
   @media only screen and (max-width: 768px) {
     .leftbar {
@@ -299,4 +360,15 @@ img{
         bottom: 0;
         left: 0;
     }
+  }
+
+
+  /* DASHBOARD */
+
+  .dashboard-container{
+   margin: 0 40px;
+  }
+  .dashboard-center{
+     display:grid;
+     
   }

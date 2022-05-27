@@ -4,7 +4,7 @@ $grid__bp-md: 768;//tablet portrait
 $grid__bp-lg: 900;//tablet landscape
 $grid__bp-xl: 1200;// small desktop
 $grid__bp-xxl: 1440;// large desktop
-$grid__cols: 12;
+$grid__cols: 12 ;
 
 $map-grid-props: (
         '': 0,
@@ -67,6 +67,7 @@ $map-grid-props: (
   &__row {
     display: flex;
     width: 100%;
+    // flex-wrap: wrap;
   }
   @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);
