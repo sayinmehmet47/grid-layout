@@ -14,6 +14,7 @@ import {
 } from "@carbon/icons-react";
 
 import React, { useEffect, useRef, useState } from "react";
+
 export default function LeftNavbar({ isLeftBarOpen }) {
   const [isWide, setWide] = useState(true);
   const [overFlowMenu, setOverFlowMenu] = useState(false);
@@ -50,7 +51,7 @@ export default function LeftNavbar({ isLeftBarOpen }) {
     <div
       className={
         isWide
-          ? `leftbar container__col-3 ${isLeftBarOpen ? "" : "hidden-md-down"}`
+          ? `leftbar  ${isLeftBarOpen ? "" : "hidden-md-down"}`
           : `container_row leftbar-small leftbar ${
               isLeftBarOpen ? "" : "hidden-md-down"
             }`

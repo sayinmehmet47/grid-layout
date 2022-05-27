@@ -23,6 +23,7 @@
     --elevation12:0px 6px 12px rgba(16,15,22,0.06);
     --elevation24:0px 12px 24px rgba(16,15,22,0.08);
     --elevation48:0px 24px 48px rgba(16,15,22,0.10);
+    --transition: all 0.3s linear;
   }
 
 
@@ -30,8 +31,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'HK Grotesk', sans-serif;
-   
+  
 }
 
 h1{
@@ -39,6 +39,10 @@ h1{
 }
 h2{
     font-size: 32px;
+}
+body{
+    background: var(--neutral200);
+    font-family: 'HK Grotesk', sans-serif;
 }
 
 .topbar{
@@ -62,6 +66,8 @@ h2{
     color: var(--neutral100);
     background-color: var(--purple1);
     max-width: 240px;
+    overflow: hidden;
+    min-width: 80px;
    
 }
 .leftbar-body .body-top{
@@ -92,13 +98,16 @@ h2{
 
 
 .leftbar ul{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+
 .leftbar li{
     display: flex;
+
     align-content: center;
     justify-content: flex-start;
     list-style: none;
@@ -108,7 +117,8 @@ h2{
     cursor: pointer;
     border-radius: 2px;
     margin-right: 35px;
-    width: fit-content;
+    width: 100%;
+    transition:var(--transition)
 
 }
 
@@ -365,10 +375,34 @@ img{
 
   /* DASHBOARD */
 
-  .dashboard-container{
-   margin: 0 40px;
+  /* .dash-container{
+   
+   margin: 0 auto;
   }
   .dashboard-center{
+     width: 100vw;
+     max-width: calc(1200px - 240px);
+     margin: 0 auto;
      display:grid;
-     
+     gap:16px;
+     grid-template-columns: repeat(auto-fill,minmax(195px,1fr));
   }
+  .dashboard-center div {
+      background: red;
+      height: 60px;
+  }
+
+  @media screen and (min-width:1440px){
+      .dash-container{
+          overflow: hidden;
+      }
+      .dashboard-center{
+           max-width:calc(100% - 240px);
+           overflow: hidden;
+           gap:24px;
+           grid-template-columns: repeat(4,1fr);
+      }
+  } */
+  
+  
+  
