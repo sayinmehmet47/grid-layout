@@ -10,7 +10,7 @@ export default function Dashboard() {
   return (
     <div className="container__row">
       <div className="dashboard">
-        <div className="dashboard-header hidden-sm-down">
+        <div className="dashboard-header hidden-md-down">
           <h2>Dashboard</h2>
           <ul className="container__row">
             <li>
@@ -21,7 +21,7 @@ export default function Dashboard() {
             </li>
             <li>IEO Ltd Global</li>
             <li>
-              <span class="numberCircle">
+              <span className="numberCircle">
                 <span>A</span>
               </span>
             </li>
@@ -30,7 +30,7 @@ export default function Dashboard() {
             </li>
           </ul>
         </div>
-        <div className="navbar-dashboard container">
+        <div className="navbar-dashboard container__row hidden-md-down">
           <ul>
             <li>Overview</li>
             <li>Waypoints & Stoppage</li>
@@ -46,18 +46,25 @@ export default function Dashboard() {
             </li>
           </ul>
         </div>
-        <div className="cards container__row">
-          <Card
-            className="container__col-3"
-            title="randomName"
-            describtion="deneme12"
-            linkText="rererre"
-          />
+        <div className="cards">
+          <h4>Recommended Tasks</h4>
+          <div className="small-cards container__row">
+            <Card
+              className="container__col-3"
+              title="randomName"
+              describtion="deneme12"
+              linkText="rererre"
+            />
 
-          <Card title="randomName" describtion="deneme12" linkText="rererre" />
+            <Card
+              title="randomName"
+              describtion="deneme12"
+              linkText="rererre"
+            />
+          </div>
         </div>
       </div>
-      <div className="container__col-2 rightbar hidden-md-down">RightBar</div>
+      {/* <div className="container__col-2 rightbar hidden-md-down">RightBar</div> */}
     </div>
   );
 }

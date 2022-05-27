@@ -6,7 +6,7 @@ export default function Topbar({ setBar, isLeftBarOpen }) {
     setBar(!isLeftBarOpen);
   };
   return (
-    <nav className="topbar hidden-sm-up">
+    <nav className="topbar hidden-md-up">
       <div onClick={toggleLeftBar}>
         <Menu />
       </div>
