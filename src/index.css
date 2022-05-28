@@ -44,7 +44,10 @@ body{
     background: var(--neutral200);
     font-family: 'HK Grotesk', sans-serif;
 }
-
+.layout{
+    display: flex;
+ 
+}
 .topbar{
     display: flex;
     justify-content: space-between;
@@ -272,14 +275,11 @@ img{
 
 .card{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    justify-content: space-between;
     background-color: var(--neutral100);
     background-color:white;
-    height:65px;
-    width: 49%;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
     border-radius: 5px;
     box-shadow: var(--elevation24);
 

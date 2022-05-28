@@ -67,7 +67,7 @@ $map-grid-props: (
   &__row {
     display: flex;
     width: 100%;
-    // flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);

@@ -6,7 +6,7 @@ import React from "react";
 export default function Card(props) {
   const { title, describtion } = props;
   return (
-    <div className="card">
+    <div className="container__col-5 card">
       <div className="card-header">
         {title === "shipment" ? (
           <span className="shipment">
@@ -17,7 +17,7 @@ export default function Card(props) {
             <TaskLocation />
           </span>
         )}
-        <div className="card-body" style={{ marginLeft: "8px" }}>
+        <div className="card-body" st>
           <p>{describtion}</p>
         </div>
       </div>

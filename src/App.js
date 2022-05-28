@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Topbar isLeftBarOpen={isLeftBarOpen} setBar={(e) => setLeftBarOpen(e)} />
-      <div className="container__row">
+      <div className="layout">
         <LeftNavbar isLeftBarOpen={isLeftBarOpen} />
         <Dashboard />
       </div>

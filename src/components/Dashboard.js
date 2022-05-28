@@ -34,7 +34,7 @@ export default function Dashboard() {
       <div className="dashboard">
         <div className="dashboard-header hidden-md-down">
           <h2>Dashboard</h2>
-          <ul className="container__row">
+          <ul className="">
             <li>
               <Search />
             </li>
@@ -52,7 +52,7 @@ export default function Dashboard() {
             </li>
           </ul>
         </div>
-        <div className="navbar-dashboard container__row hidden-md-down">
+        <div className="navbar-dashboard  hidden-md-down">
           <ul>
             <li>Overview</li>
             <li>Waypoints & Stoppage</li>
@@ -70,13 +70,19 @@ export default function Dashboard() {
         </div>
         <div className="cards">
           <h4>Recommended Tasks</h4>
-          <div className="small-cards">
+          <div className="small-cards container__row">
             <Card title="shipment" describtion="Start bulk shipment" />
             <Card title="map" describtion="Check realtime map" />
           </div>
           <div className="square-cards">
             <SquareCard />
             <SquareCard />
+            <div className="container__row">
+              <div className="container__col-md-3">Box</div>
+              <div className="container__col-md-3">Box</div>
+              <div className="container__col-md-3">Box</div>
+              <div className="container__col-md-3">Box</div>
+            </div>
           </div>
         </div>
       </div>
